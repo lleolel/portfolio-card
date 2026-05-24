@@ -1,0 +1,125 @@
+.prices-page{
+    width: 800px;
+}
+
+.prices-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+
+
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.prices-card{
+    background-color: #87d2c82a;
+    border-radius: 24px;
+    padding: 24px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.prices-card h3{
+    margin: 0;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.prices-card p{
+    margin-top: 4px;
+    margin-bottom: 18px;
+
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.mini-divider{
+    width: 26px;
+    height: 4px;
+
+    background: var(--primary-color);
+    opacity: 0.5;
+    border-radius: 999px;
+
+    margin-bottom: 18px;
+}
+
+.prices-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 0;
+
+    border-bottom: 3px solid #22b1ca32;
+}
+
+.prices-item span{
+    font-size: 13px;
+}
+
+.prices-item strong{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.prices-note{
+    margin-top: 10px;
+    padding: 14px 20px;
+    border-radius: 18px;
+    background: rgba(78, 175, 171, 0.12);
+    
+    text-align: left;
+    font-size: 8px;
+    line-height: 1.5;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prices-note i{
+    font-size: 14px;
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+.sketch-card::after{
+    content: "";
+
+    position: absolute;
+
+    right: 30px;
+    bottom: -30px;
+
+    width: 180px;
+    height: 180px;
+
+    background-image: url("../assets/imgs/sketch\ exemplo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 0.90;
+    pointer-events: none;
+}
+
+.rendered-card::after{
+    content: "";
+
+    position: absolute;
+
+    right: 30px;
+    bottom: -30px;
+
+    width: 180px;
+    height: 180px;
+
+    background-image: url("../assets/imgs/rendered\ exemplo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 0.90;
+    pointer-events: none;
+}

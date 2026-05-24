@@ -1,0 +1,32 @@
+.gallery-page{
+    width: 600px;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.gallery-grid img{
+    display: block;
+    width: 100%;
+
+    aspect-ratio: 1.2/1;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.gallery-grid::-webkit-scrollbar,
+.terms-grid::-webkit-scrollbar{
+    width: 8px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb,
+.terms-grid::-webkit-scrollbar-thumb{
+    background: #e2f4f4;
+    border-radius: 999px;
+}
