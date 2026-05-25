@@ -14,24 +14,36 @@
     <title>lele comms</title>
 
 </head>
-<body>
+<body data-page="gallery">
     
     <div class="carrd gallery-page">
 
         <div class="top-bar">
 
             <div class="category-title">
-                <a class="back-button" href="./index.html"><i class="fa-solid fa-arrow-left"></i>voltar</a>
+                <a class="back-button" href="./index.html"
+                data-en="return"
+                data-br="voltar"><i class="fa-solid fa-arrow-left"></i>return</a>
 
                 <div class="nav-divider"></div>
 
-                <h2>gallery</h2>
+                <h2
+                data-en="gallery"
+                data-br="galeria">gallery</h2>
             </div>
 
             <div class="language-switch">
-                <button class="active-language">EN-US</button>
-                <span>|</span>
-                <button>PT-BR</button>
+
+                <div class="lang-slider"></div>
+
+                <button class="lang-btn active-language" data-lang="en">
+                    EN-US
+                </button>
+
+                <button class="lang-btn" data-lang="br">
+                    PT-BR
+                </button>
+
             </div>
 
         </div>
@@ -43,23 +55,29 @@
         <!-- DIVISOOOOOOR -->
         
         <div class="gallery-grid">
-            <img src="./assets/gallery/thumbs/2draws1ref_400x460.webp">
-            <img src="./assets/gallery/thumbs/girldreams_400x450.webp">
-            <img src="./assets/gallery/thumbs/lily_400x455.webp">
-            <img src="./assets/gallery/thumbs/psy icon_400x400.webp">
-            <img src="./assets/gallery/thumbs/redraw2020_400x382.webp">
-            <img src="./assets/gallery/thumbs/ruko_400x516.webp">
-            <img src="./assets/gallery/thumbs/somalin_400x440.webp">
-            <img src="./assets/gallery/thumbs/sunimiku_400x440.webp">
-            <img src="./assets/gallery/thumbs/teto&kakyoin_400x440.webp">
+            <img src="./assets/gallery/thumbs/2draws1ref_400x460.webp" loading="lazy">
+            <img src="./assets/gallery/thumbs/girldreams_400x450.webp" loading="lazy">
+            <img src="./assets/gallery/thumbs/lily_400x455.webp" loading="lazy">
+            <img src="./assets/gallery/thumbs/psy icon_400x400.webp" loading="lazy">
+            <img src="./assets/gallery/thumbs/redraw2020_400x382.webp" loading="lazy">
+            <img src="./assets/gallery/thumbs/ruko_400x516.webp" loading="lazy">
+            <img src="./assets/gallery/thumbs/somalin_400x440.webp" loading="lazy">
+            <img src="./assets/gallery/thumbs/sunimiku_400x440.webp" loading="lazy">
+            <img src="./assets/gallery/thumbs/teto&kakyoin_400x440.webp" loading="lazy">
         </div>
 
 
         <div class="buttons">
             <div class="sections-page">
-                <a href="./gallery.html"><button>gallery</button></a>
-                <a href="./prices.html"><button>prices</button></a>
-                <a href="./terms.html"><button>terms</button></a>
+                <a href="./gallery.html" class="nav-button"
+                data-en="gallery"
+                data-br="galeria">gallery</a>
+                <a href="./prices.html" class="nav-button"
+                data-en="prices"
+                data-br="preços">prices</a>
+                <a href="./terms.html" class="nav-button"
+                data-en="terms"
+                data-br="termos">terms</a>
             </div>
 
             <div class="links">
@@ -77,5 +95,6 @@
         
     </div>
     
+    <script src="./js/main.js"></script>
 </body>
 </html>

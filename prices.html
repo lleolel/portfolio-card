@@ -14,24 +14,36 @@
     <title>lele comms</title>
 
 </head>
-<body>
+<body data-page="prices">
     
     <div class="carrd prices-page">
 
         <div class="top-bar">
 
             <div class="category-title">
-                <a class="back-button" href="./index.html"><i class="fa-solid fa-arrow-left"></i>voltar</a>
+                <a class="back-button" href="./index.html"
+                data-en="return"
+                data-br="voltar"><i class="fa-solid fa-arrow-left"></i>return</a>
 
                 <div class="nav-divider"></div>
 
-                <h2>prices</h2>
+                <h2
+                data-en="prices"
+                data-br="preços">prices</h2>
             </div>
 
             <div class="language-switch">
-                <button class="active-language">EN-US</button>
-                <span>|</span>
-                <button>PT-BR</button>
+
+                <div class="lang-slider"></div>
+
+                <button class="lang-btn active-language" data-lang="en">
+                    EN-US
+                </button>
+
+                <button class="lang-btn" data-lang="br">
+                    PT-BR
+                </button>
+
             </div>
 
         </div>
@@ -45,85 +57,125 @@
         <div class="prices-grid">
 
             <div class="prices-card sketch-card">
-                <h3>sketch/simple</h3>
-                <p>simple style, no rendering.</p>
+                <h3
+                data-en="sketch/simple"
+                data-br="sketch/simples">sketch/simple</h3>
+                <p
+                data-en="simple style, no rendering."
+                data-br="estilo simples e sem renderização.">simple style, no rendering.</p>
 
                 <div class="mini-divider"></div>
 
                 <div class="prices-item">
                     <span>icon/bust</span>
-                    <strong>R$30</strong>
+                    <strong
+                data-en="$10"
+                data-br="R$30">R$30</strong>
                 </div>
 
                 <div class="prices-item">
                     <span>halfbody</span>
-                    <strong>R$40</strong>
+                    <strong
+                data-en="$20"
+                data-br="R$40">R$40</strong>
                 </div>
 
                 <div class="prices-item">
                     <span>fullbody</span>
-                    <strong>R$50</strong>
+                    <strong
+                data-en="$25"
+                data-br="R$50">R$50</strong>
                 </div>
             </div>
 
             <div class="prices-card rendered-card">
-                <h3>rendered</h3>
-                <p>with rendering and more details.</p>
+                <h3
+                data-en="rendered"
+                data-br="renderizado">rendered</h3>
+                <p
+                data-en="with rendering and more details."
+                data-br="com renderização e mais detalhes.">with rendering and more details.</p>
 
                 <div class="mini-divider"></div>
 
                 <div class="prices-item">
                     <span>icon/bust</span>
-                    <strong>R$50</strong>
+                    <strong
+                data-en="$25"
+                data-br="R$50">R$50</strong>
                 </div>
 
                 <div class="prices-item">
                     <span>halfbody</span>
-                    <strong>R$70</strong>
+                    <strong
+                data-en="$35"
+                data-br="R$70">R$70</strong>
                 </div>
 
                 <div class="prices-item">
                     <span>fullbody</span>
-                    <strong>R$90</strong>
+                    <strong
+                data-en="$50"
+                data-br="R$90">R$90</strong>
                 </div>
             </div>
 
             <div class="prices-card">
                 <h3>extras</h3>
-                <p>additionals and customizations.</p>
+                <p
+                data-en="others additionals and pieces."
+                data-br="outros adicionais e peças.">additionals and customizations.</p>
 
                 <div class="mini-divider"></div>
 
                 <div class="prices-item">
-                    <span>extra character</span>
+                    <span
+                data-en="extra character"
+                data-br="personagem adicional">extra character</span>
                     <strong>+%60</strong>
                 </div>
 
                 <div class="prices-item">
-                    <span>detailed background</span>
-                    <strong>+R$40</strong>
+                    <span
+                data-en="detailed background"
+                data-br="fundo complexo">detailed background</span>
+                    <strong
+                data-en="+$10"
+                data-br="+R$40">+R$40</strong>
                 </div>
 
                 <div class="prices-item">
                     <span>chibi</span>
-                    <strong>R$30</strong>
+                    <strong
+                data-en="$15"
+                data-br="R$30">R$30</strong>
                 </div>
 
                 <div class="prices-item">
                     <span>refsheet</span>
-                    <strong>a partir de R$150</strong>
+                    <strong
+                data-en="starting at $100"
+                data-br="a partir de R$150">a partir de R$150</strong>
                 </div>
 
-                <div class="prices-note"><i class="fa-solid fa-circle-info"></i><span>os valores podem variar conforme a complexidade da arte.</span></div>
+                <div class="prices-note"><i class="fa-solid fa-circle-info"></i><span
+                data-en="prices may vary depending on the complexity of the artwork."
+                data-br="os valores podem variar conforme a complexidade da arte.">os valores podem variar conforme a complexidade da arte.</span></div>
             </div>
 
         </div>
 
         <div class="buttons">
             <div class="sections-page">
-                <a href="./gallery.html"><button>gallery</button></a>
-                <a href="./prices.html"><button>prices</button></a>
-                <a href="./terms.html"><button>terms</button></a>
+                <a href="./gallery.html" class="nav-button"
+                data-en="gallery"
+                data-br="galeria">gallery</a>
+                <a href="./prices.html" class="nav-button"
+                data-en="prices"
+                data-br="preços">prices</a>
+                <a href="./terms.html" class="nav-button"
+                data-en="terms"
+                data-br="termos">terms</a>
             </div>
 
             <div class="links">
@@ -141,5 +193,6 @@
         
     </div>
     
+    <script src="./js/main.js"></script>
 </body>
 </html>

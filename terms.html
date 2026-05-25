@@ -14,24 +14,36 @@
     <title>lele comms</title>
 
 </head>
-<body>
+<body data-page="terms">
     
     <div class="carrd terms-page">
 
         <div class="top-bar">
 
             <div class="category-title">
-                <a class="back-button" href="./index.html"><i class="fa-solid fa-arrow-left"></i>voltar</a>
+                <a class="back-button" href="./index.html"
+                data-en="return"
+                data-br="voltar"><i class="fa-solid fa-arrow-left"></i>voltar</a>
 
                 <div class="nav-divider"></div>
 
-                <h2>terms</h2>
+                <h2
+                data-en="terms"
+                data-br="termos">terms</h2>
             </div>
 
             <div class="language-switch">
-                <button class="active-language">EN-US</button>
-                <span>|</span>
-                <button>PT-BR</button>
+
+                <div class="lang-slider"></div>
+
+                <button class="lang-btn active-language" data-lang="en">
+                    EN-US
+                </button>
+
+                <button class="lang-btn" data-lang="br">
+                    PT-BR
+                </button>
+
             </div>
 
         </div>
@@ -43,67 +55,164 @@
         <!-- DIVISOOOOOOR -->
 
 
+
         <div class="tos-grid">
+
+            <!-- PRIMEIRA COLUNA -->
+             
             <div class="tos-column">
                 <div class="tos-item">
-                    <h3>1. Pagamento e prazos</h3>
+                    <h3
+                data-en="1. Payment"
+                data-br="1. Pagamento">1. Payment</h3>
                     <ul>
-                        <li>pagamento deve ser feito 50% para iniciar e 50% após a finalização, ou 100% adiantado;</li>
-                        <li>pagamento somente via Pix ou PayPal</li>
-                        <li>tenho um prazo de no mínimo uma semana e máximo de 2 semanas, dependendo da complexidade;</li>
-                        <li>posso atrasar por motivos pessoais, mas será avisado;</li>
-                        <li>comissões com prazo podem serem discutidas, isso sendo de acordo com minha disponibilidade ou complexidade da arte, podendo envolver taxas.</li>
+                        <li
+                data-en="50% upfront + 50% after sketch approval, or 100% paid in advance;"
+                data-br="50% para iniciar + 50% após sketch aprovado, ou 100% adiantado;">50% upfront + 50% after sketch approval, or 100% paid in advance;</li>
+                        <li
+                data-en="only via Pix or PayPal;"
+                data-br="somente via Pix ou PayPal;">only via Pix or PayPal;</li>
+                        <li
+                data-en="unpaid orders within 48h will be automatically cancelled or subject to price changes;"
+                data-br="pedidos não pagos em até 48h serão cancelados automaticamente ou sujeito a alteração de valor;">unpaid orders within 48h will be automatically cancelled or subject to price changes;</li>
                     </ul>
                 </div>
-
+                
                 <div class="tos-item">
-                    <h3>2. Processos e reembolsos</h3>
+                    <h3
+                data-en="2. Deadlines"
+                data-br="2. Prazos">2. Deadlines</h3>
                     <ul>
-                        <li>pequenos ajustes (cores, detalhes) podem ser pedidos até a finalização, alterações grandes pode envolver taxa adicional;</li>
-                        <li>pedidos não pagos dentro de 48h podem ser cancelados;</li>
-                        <li>você receberá atualizações em casa etapa importante do processo;</li>
-                        <li>é possível pedir reembolso parcial apenas durante a etapa de sketch, após sketch aprovado ou arte finalizada não há reembolso;</li>
-                        <li>posso recusar qualquer pedido sem justificativa, com reembolso integral se já pago.</li>
+                        <li
+                data-en="deadline of 1-3 weeks depending on complexity;"
+                data-br="prazo de 1-3 semanas, conforme complexidade;">deadline of 1-3 weeks depending on complexity;</li>
+                        <li
+                data-en="delays due to personal reasons will be communicated;"
+                data-br="atrasos por motivos pessoais serão comunicados;">delays due to personal reasons will be communicated;</li>
+                        <li
+                data-en="rush orders can be negotiated but involve additional fees depending on availability;"
+                data-br="prazos de urgência podem ser negociadas, mas envolvem taxa adicional conforme disponibilidade;">rush orders can be negotiated but involve additional fees depending on availability;</li>
                     </ul>
                 </div>
 
                  <div class="tos-item">
-                    <h3>3. Uso da arte</h3>
+                    <h3
+                data-en="3. Refunds and cancellations"
+                data-br="3. Reembolsos e cancelamentos">3. Refunds and cancellations</h3>
                     <ul>
-                        <li>uso pessoal/não comercial: você pode postar (com créditos), imprimir para si, usar em avatar, banner, etc;</li>
-                        <li>uso comercial ou a venda utilizando a minha arte é permitida se houver acordo que inclui uma porcentagem das vendas;</li>
-                        <li>é estritamente proibido utilizar as minhas artes em IAs para alimentá-las ou modificá-las, utilizá-las em deepfakes, discurso de ódio ou pornografia.</li>
+                        <li
+                data-en="partial refund only during the sketch stage;"
+                data-br="reembolso parcial somente na etapa de sketch;">partial refund only during the sketch stage;</li>
+                        <li
+                data-en="after sketch approval, no refund under any circumstances;"
+                data-br="após sketch aprovado, não há reembolso em nenhuma hipótese;">after sketch approval, no refund under any circumstances;</li>
+                        <li
+                data-en="if the art reaches its final stage, no refund;"
+                data-br="se a arte chegar ao seu estágio final, não há reembolso;">if the art reaches its final stage, no refund;</li>
+                        <li
+                data-en="I may refuse any commission without justification (full refund if already paid)."
+                data-br="posso recusar pedidos sem justificativa alguma (com o reembolso integral se já pago).">I may refuse any commission without justification (full refund if already paid).</li>
+                    </ul>
+                </div>
+
+                <div class="tos-item">
+                    <h3
+                data-en="4. Creation process"
+                data-br="4. Processo de criação">4. Creation process</h3>
+                    <ul>
+                        <li
+                data-en="small adjustments are free after sketch until finalization;"
+                data-br="pequenos ajustes são gratuitos após o sketch até a finalização;">small adjustments are free after sketch until finalization;</li>
+                        <l
+                data-en="changes after finalization will incur an additional fee;"
+                data-br="alterações após finalização geram taxa adicional">changes after finalization will incur an additional fee;</l>
+                        <li
+                data-en="you will be updated at every important stage of the progress."
+                data-br="você será atualizado em cada etapa importante do progresso.">you will be updated at every important stage of the progress.</li>
                     </ul>
                 </div>
             </div>
+
+            <!-- SEGUNDA COLUNA -->
 
             <div class="tos-column">
                 <div class="tos-item">
-                    <h3>4. Meus direitos como artista</h3>
+                    <h3
+                data-en="5. Permitted use"
+                data-br="5. Uso permitido">5. Permitted use</h3>
                     <ul>
-                        <li>eu mantenho todos os direitos autorais da obra;</li>
-                        <li>posso divulgar a arte em minhas redes (com marca d'água) e usá-la em portfólio a menos que acordado o contrário (taxa adicional);</li>
+                        <li
+                data-en="personal use: post on social media (with visible credits), print for personal use, use as avatar, banner, wallpaper, gift;"
+                data-br="uso pessoal: postar em redes sociais (com créditos visíveis), imprimir para uso próprio, usar como avatar, banner, wallpaper, presentear;">personal use: post on social media (with visible credits), print for personal use, use as avatar, banner, wallpaper, gift;</li>
+                        <li
+                data-en="commercial use: only allowed with prior agreement, including a percentage of sales to the artist;"
+                data-br="uso comercial: permitido somente com acordo prévio estabelecido, incluindo uma porcentagem das vendas para o artista;">commercial use: only allowed with prior agreement, including a percentage of sales to the artist;</li>
+                        <li
+                data-en="credits are mandatory in all public posts, even with authorized use."
+                data-br="créditos são obrigatórios em todas as postagens públicas, mesmo com uso autorizado.">credits are mandatory in all public posts, even with authorized use.</li>
                     </ul>
                 </div>
 
                 <div class="tos-item">
-                    <h3>5. Concordância final</h3>
+                    <h3
+                data-en="6. Prohibited use"
+                data-br="6. Uso proibido">6. Prohibited use</h3>
                     <ul>
-                        <li>Ao pagar, você declara ter lido, entendido e aceito todos os termos acima.</li>
+                        <li
+                data-en="I strictly prohibit the client from using my art to feed, generate, train or modify with AI (Artificial Intelligence), this also applies to deepfakes and NFTs;"
+                data-br="eu proíbo estritamente o cliente de utilizar minhas artes para alimentar, gerar, treinar ou modificar com IA (Inteligência Artificial), isso servindo também para deepfakes e NFTs;">I <strong>strictly</strong> prohibit the client from using my art to feed, generate, train or modify with AI (Artificial Intelligence), this also applies to deepfakes and NFTs;</li>
+                        <li
+                data-en="using the art in hate speech, crime apology, political ideologies, pornographic content or any offensive or illegal material;"
+                data-br="utilizar a arte em discurso de ódio, apologia a crimes, ideologias políticas, conteúdo pornográfico ou qualquer material ofensivo ou ilegal;">using the art in hate speech, crime apology, political ideologies, pornographic content or any offensive or illegal material;</li>
+                        <li
+                data-en="reselling, redistributing or profiting from the art without my authorization."
+                data-br="revender, redistribuir ou lucrar com a arte sem a minha autorização.">reselling, redistributing or profiting from the art without my authorization.</li>
+                    </ul>
                 </div>
-                
-                <div class="tos-note"><i class="fa-solid fa-circle-info"></i><span> Ao fazer um pedido, você confirma que leu e concorda com estes termos de serviço.</span></div>
 
+                <div class="tos-item">
+                    <h3
+                data-en="7. Copyright"
+                data-br="7. Direitos autorais">7. Copyright</h3>
+                    <ul>
+                        <li
+                data-en="I retain all copyrights to the art;"
+                data-br="eu mantenho todos os direitos autorais da arte;">I retain all copyrights to the art;</li>
+                        <li
+                data-en="the commission grants you a usage license, not intellectual property;"
+                data-br="a comissão te concede a licença de uso, não a propriedade intelectual;">the commission grants you a usage license, not intellectual property;</li>
+                        <li
+                data-en="I may post the final art on my social media with a protective watermark;"
+                data-br="posso divulgar a arte finalizada em minhas redes sociais com marca d'água protetiva;">I may post the final art on my social media with a protective watermark;</li>
+                        <li
+                data-en="unless confidentiality is agreed (additional fee for exclusivity)."
+                data-br="a menos que combinado sigilo (taxa adicional para exclusividade).">unless confidentiality is agreed (additional fee for exclusivity).</li>
+                    </ul>
+                </div>
             </div>
+
 
         </div>
 
+        <!-- AVISO BIG BIG -->
+        
+        <div class="tos-note"
+                data-en="by placing an order and making the payment, you confirm that you have read and agree to all terms of service."
+                data-br="ao fazer o pedido e realizar o pagamento, você confirma que leu e concorda com todos os termos de serviço."><i class="fa-solid fa-circle-info"></i><span> by placing an order and making the payment, you confirm that you have read and agree to all terms of service.</span></div>
+        
+        <!-- AVISO BIG BIG -->
 
         <div class="buttons">
             <div class="sections-page">
-                <a href="./gallery.html"><button>gallery</button></a>
-                <a href="./prices.html"><button>prices</button></a>
-                <a href="./terms.html"><button>terms</button></a>
+                <a href="./gallery.html" class="nav-button"
+                data-en="gallery"
+                data-br="galeria">gallery</a>
+                <a href="./prices.html" class="nav-button"
+                data-en="prices"
+                data-br="preços">prices</a>
+                <a href="./terms.html" class="nav-button"
+                data-en="terms"
+                data-br="termos">terms</a>
             </div>
 
             <div class="links">
@@ -120,6 +229,7 @@
         </div>
         
     </div>
-    
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
