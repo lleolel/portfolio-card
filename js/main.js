@@ -25,7 +25,7 @@ langButtons.forEach((button, index) => {
         const lang = button.dataset.lang;
 
         document.querySelectorAll("[data-en]").forEach(element => {
-            element.textContent = element.dataset[lang];
+            element.innerHTML = element.dataset[lang];
         });
 
         langButtons.forEach(btn => {
@@ -37,4 +37,26 @@ langButtons.forEach((button, index) => {
         slider.style.transform = `translateX(${index * 68}px)`;
     });
 
+});
+
+
+//LIGHTBOX -> GALLERY
+
+const galleryImages = document.querySelectorAll(".gallery-grid img");
+
+const lightbox = document.querySelector(".lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+
+galleryImages.forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        lightbox.classList.add("active");
+        lightboxImg.src = img.src;
+    });
+
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("active");
 });
