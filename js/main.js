@@ -42,21 +42,52 @@ langButtons.forEach((button, index) => {
 
 //LIGHTBOX -> GALLERY
 
-const galleryImages = document.querySelectorAll(".gallery-grid img");
+const clickableImages = document.querySelectorAll(
+    ".gallery-grid img, .prices-page img"
+);
 
 const lightbox = document.querySelector(".lightbox");
 const lightboxImg = document.querySelector(".lightbox-img");
 
-galleryImages.forEach(img => {
+if(lightbox){
 
-    img.addEventListener("click", () => {
+    clickableImages.forEach(img => {
 
-        lightbox.classList.add("active");
-        lightboxImg.src = img.src;
+        img.addEventListener("click", () => {
+
+            lightbox.classList.add("active");
+            lightboxImg.src = img.src;
+
+        });
+
     });
 
-});
+    lightbox.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+    });
 
-lightbox.addEventListener("click", () => {
-    lightbox.classList.remove("active");
+}
+
+// ABA -> PRICES !!
+
+const pieces = document.querySelectorAll(".piece-item");
+
+pieces.forEach(piece => {
+
+    const aba = piece.querySelector(".piece-aba");
+
+    aba.addEventListener("click", () => {
+
+        pieces.forEach(other => {
+
+            if(other !== piece){
+                other.classList.remove("active");
+            }
+
+        });
+
+        piece.classList.toggle("active");
+
+    });
+
 });

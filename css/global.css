@@ -4,6 +4,7 @@
     --background-button: rgba(255, 255, 255, 0.87);  /* BUTAO PADRAO*/
     --hover-button: rgba(133, 203, 208, 0.87);  /* BUTAO C/HOVER PADRAO*/
     --hover-color: rgb(232, 245, 255);  /* TEXTO C/HOVER BOTAO */
+    --card-color: rgba(78, 175, 171, 0.12); /* COR DOS CARDS*/
 }
 
 *{
