@@ -1,5 +1,5 @@
 :root{
-    --primary-color: rgb(0, 179, 0);  /* GREEN BLUEKK PADRÃO */
+    --primary-color: rgb(150, 111, 247);  /* GREEN BLUEKK PADRÃO */
     --text-color: rgb(126, 136, 126);  /* COR TEXTO PADRÃO */
     --secondary-text: rgb(145,150,180); /*COR SECUNDARIA DO PADRAO*/
     --white-text: white; /* COR BRANCA TEXTO */
@@ -7,12 +7,12 @@
     --background-alfa: rgba(238, 255, 241, 0.754); /*É O FUNDO DO CARD DAS PAGS*/
 
     --background-button: rgba(255, 255, 255, 0.87);  /* BUTAO PADRAO*/
-    --hover-button: rgba(133, 208, 162, 0.87);  /* BUTAO C/HOVER PADRAO*/
+    --hover-button: rgba(183, 138, 255, 0.87);  /* BUTAO C/HOVER PADRAO*/
     --hover-color: rgb(232, 245, 255);  /* TEXTO C/HOVER BOTAO */
     --sombra: rgba(120, 150, 180, 0.18); /*SOMBRAAA*/
 
     --card-color: rgba(78, 175, 102, 0.12); /* COR DOS CARDS*/
-    --secondary-card: rgba(78, 175, 99, 0.12); /* COR DOS CARDS SECUNDÁRIOS*/
+    --secondary-card: rgba(215, 205, 255, 0.609); /* COR DOS CARDS SECUNDÁRIOS*/
 
     --divisor: rgba(34, 202, 40, 0.167); /*COR DOS DIVISORES*/
 
