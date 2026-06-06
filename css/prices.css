@@ -1,5 +1,5 @@
 .prices-page{
-    width: 650px;
+    width: 800px;
     max-height: 85vh;
 }
 
@@ -44,12 +44,12 @@
 .mini-divider{
     width:28px;
     height:4px;
+    margin:14px 0 10px;
 
     border-radius:999px;
 
     background:var(--primary-color);
 
-    margin:14px 0 10px;
     opacity:.5;
 }
 
@@ -81,55 +81,53 @@
 
 .sketch-card,
 .rendered-card{
-    height:fit-content;
+    height: fit-content;
 }
 
 
 .extras-card{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .additionals{
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
 .pieces h4{
-    margin:0 0 12px;
-    font-size:14px;
+    margin: 0 0 12px;
+    font-size: 14px;
 }
 
 
 .piece-item{
     background:rgba(236,253,253,.45);
+    border-radius: 12px;
 
-    border-radius:12px;
-
-    margin-bottom:10px;
-
-    overflow:hidden;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
 
 
 .piece-aba{
-    display:flex;
-    align-items:center;
-    gap:10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-    padding:12px;
-    cursor:pointer;
+    padding: 12px;
+    cursor: pointer;
 }
 
 .piece-aba strong{
-    margin-left:auto;
+    margin-left: auto;
 }
 
 .piece-aba i{
     font-size:10px;
-    transition:.25s;
+    transition: .25s;
 }
 
 
@@ -147,11 +145,11 @@
 }
 
 .piece-item.active .piece-content{
-    max-height:600px;
+    max-height: 600px;
 
-    opacity:1;
+    opacity: 1;
 
-    padding:0 12px 8px;
+    padding: 0 12px 8px;
 }
 
 .piece-item.active .piece-aba i{
@@ -273,4 +271,168 @@
     max-height: 90vh;
 
     border-radius: 12px;
+}
+
+
+
+
+
+
+
+/* RESPONSIVO */
+
+
+@media (max-width: 760px){
+
+    .prices-page{
+        width:92vw;
+        max-height: none;
+        margin: 20px;
+        padding: 20px 40px;
+    }
+
+    .prices-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 9px;
+
+        height: auto;
+        overflow: visible;
+    }
+
+    .prices-card{
+        /* width: 100%; */
+        padding: 18px;
+        /* border-radius:18px; */
+        /* box-sizing: border-box; */
+    }
+
+    .card-info{
+        min-width:0;
+    }
+
+    .sketch-card,
+    .rendered-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .pieces h4{
+        font-size: 23px;
+    }
+
+    .prices-preview{
+        width: 100%;
+        height: 100%;
+
+        object-fit:cover;
+        border-radius:12px;
+
+        margin:0;
+    }
+
+    .prices-card h3{
+        font-size: 21px;
+    }
+
+    .prices-card p{
+        font-size:14px;
+    }
+
+    .mini-divider{
+        width: 38px;
+        height: 6px;
+        margin: 10px 0 14px;
+    }
+
+    .prices-item{
+        border-bottom: 3px solid rgba(34, 177, 202, 0.167);
+    }
+
+    .prices-item span{
+        font-size: 15px;
+    }
+
+    .prices-item strong{
+        font-size:18px;
+    }
+
+    .prices-item:last-of-type{
+        border-bottom:none;
+    }
+
+
+    .piece-aba{
+        padding: 16px;
+    }
+
+    .piece-aba span,
+    .piece-aba strong{
+        font-size: 17px;
+    }
+
+    .piece-content p,
+    .piece-content li{
+        font-size: 15px;
+    }
+
+
+    
+    .piece-content img{
+        width: 300px;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    .piece-content ul{
+        padding-left:22px;
+    }
+
+    .piece-content li{
+        font-size:14px;
+    }
+
+    .piece-item.active .piece-content{
+        max-height: 600px;
+
+        opacity: 1;
+
+        padding: 0 18px 8px;
+    }
+
+    /* não faço */
+
+    .dont-do{
+        grid-column: auto;
+    }
+
+    .dont-do ul{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .dont-do li{
+        font-size:15px;
+    }
+
+    .tos-note{
+        font-size:14px;
+    }
+
+    /* botões */
+
+    .prices-page .sections-page{
+        /* flex-direction:column; */
+        width:100%;
+    }
+
+    .prices-page .nav-button{
+        /* width:100%; */
+        box-sizing:border-box;
+    }
+
+
 }
