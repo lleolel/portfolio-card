@@ -1,5 +1,6 @@
 .terms-page{
     width: 800px;
+    max-height: 85vh;
 }
 
 .tos-grid{
@@ -71,4 +72,50 @@
     font-size: 14px;
     color: var(--primary-color);
     opacity: 0.7;
+}
+
+
+
+
+
+/* RESPONSIVOO */
+
+
+@media (max-width: 760px){
+
+    .terms-page{
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
+        padding: 20px 40px;
+        margin:20px;
+    }
+
+    .tos-grid{
+        grid-template-columns: 1fr;
+        gap: 24px;
+
+        max-height: none;
+        overflow: visible;
+    }
+
+    .tos-column{
+        gap: 24px;
+    }
+
+    .tos-item h3{
+        font-size: 19px;
+    }
+
+    .tos-item li{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .tos-note{
+        padding: 16px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
 }

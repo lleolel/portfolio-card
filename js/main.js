@@ -18,29 +18,51 @@ navButtons.forEach(button =>{
 const langButtons = document.querySelectorAll(".lang-btn");
 const slider = document.querySelector(".lang-slider");
 
-langButtons.forEach((button, index) => {
+function changeLanguage(lang){
+
+    document.querySelectorAll("[data-en]").forEach(element => {
+        element.innerHTML = element.dataset[lang];
+    });
+
+    langButtons.forEach(btn => {
+        btn.classList.remove("active-language");
+    });
+
+    const activeButton = document.querySelector(
+        `.lang-btn[data-lang="${lang}"]`
+    );
+
+    if(activeButton){
+
+        activeButton.classList.add("active-language");
+
+        const index = [...langButtons].indexOf(activeButton);
+
+        slider.style.transform = `translateX(${index * 68}px)`;
+
+    }
+
+}
+
+const savedLanguage = localStorage.getItem("language") || "en";
+
+changeLanguage(savedLanguage);
+
+langButtons.forEach(button => {
 
     button.addEventListener("click", () => {
 
         const lang = button.dataset.lang;
 
-        document.querySelectorAll("[data-en]").forEach(element => {
-            element.innerHTML = element.dataset[lang];
-        });
+        localStorage.setItem("language", lang);
 
-        langButtons.forEach(btn => {
-            btn.classList.remove("active-language");
-        });
+        changeLanguage(lang);
 
-        button.classList.add("active-language");
-
-        slider.style.transform = `translateX(${index * 68}px)`;
     });
 
 });
 
-
-//LIGHTBOX -> GALLERY
+// LIGHTBOX -> GALLERY
 
 const clickableImages = document.querySelectorAll(
     ".gallery-grid img, .prices-page img"

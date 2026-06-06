@@ -1,5 +1,6 @@
 .gallery-page{
     width: 800px;
+    padding: 20px 40px;
 }
 
 .gallery-grid{
@@ -125,5 +126,6 @@
         width:100%;
         box-sizing:border-box;
     }
+    
 
 }

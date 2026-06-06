@@ -42,15 +42,15 @@
 }
 
 .mini-divider{
-    width:28px;
-    height:4px;
-    margin:14px 0 10px;
+    width: 28px;
+    height: 4px;
+    margin: 14px 0 10px;
 
-    border-radius:999px;
+    border-radius: 999px;
 
-    background:var(--primary-color);
+    background: var(--primary-color);
 
-    opacity:.5;
+    opacity: .5;
 }
 
 .prices-item{
@@ -60,7 +60,7 @@
 
     padding: 12px 0;
 
-    border-bottom:3px solid rgba(34,177,202,.15);
+    border-bottom:3px solid var(--divisor);
 }
 
 .prices-item span,
@@ -103,7 +103,7 @@
 
 
 .piece-item{
-    background:rgba(236,253,253,.45);
+    background: rgba(236, 253, 253, 0.689);
     border-radius: 12px;
 
     margin-bottom: 10px;
@@ -215,7 +215,7 @@
     margin-top: 10px;
     padding: 14px 20px;
     border-radius: 18px;
-    background: rgba(78, 175, 171, 0.12);
+    background: var(--secondary-card);
     
     text-align: left;
     font-size: 13px;
@@ -348,7 +348,7 @@
     }
 
     .prices-item{
-        border-bottom: 3px solid rgba(34, 177, 202, 0.167);
+        border-bottom: 3px solid var(--divisor);
     }
 
     .prices-item span{
