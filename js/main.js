@@ -62,10 +62,8 @@ langButtons.forEach(button => {
 
         const lang = button.dataset.lang;
 
-        // Salva idioma
         localStorage.setItem("language", lang);
 
-        // Troca idioma
         changeLanguage(lang);
 
     });
@@ -89,7 +87,9 @@ if (lightbox) {
         img.addEventListener("click", () => {
 
             lightbox.classList.add("active");
-            lightboxImg.src = img.src;
+
+            // usa a imagem HD se existir
+            lightboxImg.src = img.dataset.full || img.src;
 
         });
 
