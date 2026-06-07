@@ -458,6 +458,12 @@ body[data-page="home"] {
 
 @media (max-width: 760px){
 
+    body[data-page="gallery"],
+    body[data-page="prices"],
+    body[data-page="terms"]{
+        flex-direction:column;
+    }
+
     /* LARGURA DO CARD MOBILE
        ALTERE ESTE VALOR SE QUISER O CARD MAIS LARGO OU MAIS ESTREITO */
     .home-card{
@@ -610,4 +616,31 @@ body[data-page="home"] {
         width:62px;
         height:38px;
     }
+
+
+    /* FOOTERR */
+
+    .carrd{
+        margin-bottom: 20px;
+    }
+    
+    .site-footer{
+        position: static;
+        margin-top: 20px;
+        flex-direction: column;
+        text-align: center;
+        /* padding: 12px 10px; */
+    }
+
+    .footer-center,
+    .footer-right{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.gallery-page,
+.prices-page,
+.terms-page{
+    box-sizing:border-box;
 }
