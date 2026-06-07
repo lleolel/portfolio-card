@@ -1,79 +1,76 @@
-# 🎨 Portfolio Card
+# 💚 lleolell comms :D
 
-Meu website pessoal para commissions de arte digital, desenvolvido com HTML, CSS e JavaScript.
+> digital artist • commissions • frontend practice
 
-🔗 Site online: https://lleolel.github.io/portfolio-card/
+🌿 website
 
----
-
-## ✨ Sobre o projeto
-
-Este projeto foi criado para centralizar minhas informações de commissions, incluindo:
-
-- Galeria de artes
-- Tabela de preços
-- Termos de serviço (TOS)
-- Informações sobre pedidos
-- Redes sociais e contato
-
-Além de servir como página de commissions, o projeto também é uma forma de praticar desenvolvimento front-end e design de interfaces.
+https://lleolel.github.io/portfolio-card/
 
 ---
 
-## 🚧 Status
+## ✦ about
 
-em desenvolvimento ativo, então estará em constante mudança.
-
----
-
-## 🛠 Tecnologias
-
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub Pages
+this project is my personal commissions website, created to centralize information about my artwork, pricing, terms of service, and contact links.
 
 ---
 
-## 📂 Estrutura atual
+## ✦ features
 
-```text
-portfolio-card/
-│
-├── assets/
-│   ├── gallery/
-│   └── imgs/
-│
-├── css/
-│   ├── global.css
-│   ├── gallery.css
-│   ├── prices.css
-│   └── terms.css
-│
-├── js/
-│   └── script.js
-│
-├── index.html
-├── gallery.html
-├── prices.html
-└── terms.html
+♡ art gallery
+
+♡ commission prices
+
+♡ terms of service (tos)
+
+♡ english / portuguese language switch
+
+♡ responsive layout for mobile
+
+♡ lightbox image viewer
+
+---
+
+## ✦ tech stack
+
+```txt
+html
+css
+javascript
+git
+github pages
 ```
 
 ---
 
-## 🎯 Objetivos
+## ✦ objective
 
-- Melhorar minhas habilidades em front-end
-- Construir um portfólio funcional
-- Criar uma página profissional para commissions
-- Aprender mais sobre responsividade e UI/UX
+* improve front-end development skills
+* practice UI/UX design
+* pratice responsive web design
+* build a functional commissions page
+* create a portfolio project from zero
 
 ---
 
+## ✦ status
 
-## 👤 Autor
+🌱 completed
 
-Desenvolvido por Le Koga <4
+version 1.0 is complete and publicly available.
 
-https://music.youtube.com/watch?v=ND5dk1JnMhE&si=H8GF7M5PX90NLQK6
+---
+
+## ✦ Author
+
+developed by le koga <4
+
+
+Instagram: @lleolell
+
+Discord: @lleolell
+
+```
+https://music.youtube.com/watch?v=ND5dk1JnMhE&si=bxxsLFHi7rM2KaKg
+```
+
+---
