@@ -4,13 +4,13 @@
 }
 
 .prices-grid{
-    display:grid;
-    align-items:start;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:12px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
 
-    height:550px;
-    overflow-y:auto;
+    height: 550px;
+    overflow-y: auto;
 }
 
 .prices-grid::-webkit-scrollbar{
@@ -26,19 +26,19 @@
     align-self: start;
     background-color: var(--card-color);
     border-radius: 20px;
-    padding: 16px;
+    padding: 0 12px;
     min-width: 0;
 }
 
 
-.prices-card h4{
-    margin: 0;
+.prices-card h3{
+    margin: 8px 0 0 0;
     font-size: 19px;
 }
 
 .prices-card p{
-    font-size: 14px;
-    margin-top: 4px;
+    font-size: 12px;
+    margin-bottom: 0;
 }
 
 .mini-divider{
@@ -97,7 +97,7 @@
 }
 
 .pieces h4{
-    margin: 0 0 12px;
+    margin: 0 0 19px;
     font-size: 14px;
 }
 
@@ -144,6 +144,12 @@
 
 }
 
+.prices-item:last-of-type{
+    border-bottom:none;
+}
+
+
+
 .piece-item.active .piece-content{
     max-height: 600px;
 
@@ -175,7 +181,7 @@
 
 .piece-content p,
 .piece-content li{
-    margin-top:12px;
+    margin-top: 12px;
     font-size: 10px;
 }
 
