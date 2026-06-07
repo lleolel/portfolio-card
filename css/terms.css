@@ -1,5 +1,5 @@
 .terms-page{
-    width: 680px;
+    width: 100%;
     max-height: 85vh;
 }
 
@@ -84,7 +84,7 @@
 @media (max-width: 760px){
 
     .terms-page{
-        width: 100%;
+        width:min(92vw, 480px);
         max-width: 100%;
         max-height: none;
         padding: 20px 40px;
@@ -119,3 +119,10 @@
     }
 
 }
+
+@media (max-width: 460px){
+
+    .terms-page{
+        width:92vw;
+    }
+}    

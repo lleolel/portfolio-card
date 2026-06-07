@@ -285,7 +285,7 @@
 @media (max-width: 760px){
 
     .prices-page{
-        width:92vw;
+        width:min(92vw, 480px);
         max-height: none;
         margin: 20px;
         padding: 20px 40px;
@@ -441,7 +441,7 @@
 @media (max-width: 460px){
 
     .prices-page{
-        width: 95%;
+        width:92vw;
     }
 
     .prices-card{

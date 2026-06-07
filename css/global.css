@@ -453,6 +453,8 @@ body[data-page="home"] {
 
 
 
+
+
 /* RESPONSIVO */
 
 
@@ -644,3 +646,10 @@ body[data-page="home"] {
 .terms-page{
     box-sizing:border-box;
 }
+
+@media (max-width: 460px){
+
+    .home-page{
+        width:92vw;
+    }
+}    

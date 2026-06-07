@@ -129,3 +129,10 @@
     
 
 }
+
+@media (max-width: 460px){
+
+    .gallery-page{
+        width:92vw;
+    }
+}    
